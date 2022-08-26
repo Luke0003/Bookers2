@@ -34,7 +34,7 @@
                 <%= link_to books_path, class: 'nav-link text-light' do %>
                   <li class="nav-item"><i class="fas fa-book-open"></i> Books </li>
                 <% end %>
-                <%= link_to new_user_session_path, class: 'nav-link text-light' do %>
+                <%= link_to ndestroy_user_session_path, class: 'nav-link text-light' do %>
                   <li class="nav-item"><i class="fas fa-sign-out-alt"></i> Log out </li>
                 <% end %>
               </ul>
@@ -54,7 +54,7 @@
                 <%= link_to new_user_registration_path, class: 'nav-link text-light' do %>
                   <li class="nav-item"><i class="fas fa-user-plus"></i> Sign up </li>
                 <% end %>
-                <%= link_to destroy_user_session_path, class: 'nav-link text-light' do %>
+                <%= link_to new_user_session_path, class: 'nav-link text-light' do %>
                   <li class="nav-item"><i class="fas fa-sign-in-alt"></i> Log in </li>
                 <% end %>
               </ul>
@@ -66,11 +66,11 @@
     <%= yield %>
     <footer>
       <div class="container mt-5">
-        <!--<div class="row">-->
+        <div class="row">
           <div  class="mx-auto" >
             <p>CopyRight Infratop.inc</p>
           </div>
-        <!--</div>-->
+        </div>
       </div>
     </footer>
   </body>
